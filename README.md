@@ -1,1 +1,1 @@
-# mace-tutorials
+# MACE tutorials
