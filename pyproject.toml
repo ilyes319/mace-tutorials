@@ -1,0 +1,39 @@
+[project]
+name = "mace-tutorials"
+version = "0.1.0"
+description = "Dependencies for the MACE tutorial notebooks"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ase",
+    "ase-ga",
+    "asemolec @ https://github.com/imagdau/aseMolec/archive/2633a672eb235c49a5c7d7161f76f52f4e218e99.tar.gz",
+    "e3nn==0.4.4",
+    "ipython",
+    "ipywidgets",
+    "janus-core[chgnet]",
+    "jupyter>=1.1.1",
+    "mace-torch>=0.3.16",
+    "matplotlib<3.11",
+    "nglview",
+    "numpy==2.0.0",
+    "pip>=26.2.1",
+    "pymatgen",
+    "pyyaml",
+    "quippy-ase; sys_platform == 'linux' and platform_machine == 'x86_64'",
+    "rdkit",
+    "scikit-image",
+    "scipy",
+    "tblite; sys_platform == 'darwin'",
+    "torch>=2.2,<2.6",
+    "tqdm",
+    "x3dase",
+    "xtb; sys_platform == 'linux' and platform_machine == 'x86_64'",
+]
+
+[project.optional-dependencies]
+cuda = [
+    "cuequivariance",
+    "cuequivariance-ops-torch-cu12; sys_platform == 'linux' and platform_machine == 'x86_64'",
+    "cuequivariance-torch",
+]
